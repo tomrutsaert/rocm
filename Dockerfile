@@ -22,4 +22,4 @@ RUN apt update -qq && DEBIAN_FRONTEND=noninteractive apt install -qq -y \
     apt clean && \
     rm -rf /var/lib/apt/lists/*
 
-CMD ["bash","rocm-smi"]
+CMD ["rocm-smi"]
