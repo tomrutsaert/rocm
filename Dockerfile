@@ -15,7 +15,6 @@ RUN apt update -qq && DEBIAN_FRONTEND=noninteractive apt install -qq -y \
 COPY rocm-pin-600 /etc/apt/preferences.d/rocm-pin-600
 
 RUN apt update -qq && DEBIAN_FRONTEND=noninteractive apt install -qq -y \
-    amdgpu-dkms \
     rocm && \
     apt clean && \
     rm -rf /var/lib/apt/lists/*
